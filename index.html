@@ -12,170 +12,172 @@ It requires no special copyright notes nor attribution.
     <title>Nissan Ahmed</title>
 
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-    <meta content="Personal portfolio site" name="description">
-    <meta content="Nissan Ahmed" name="author">
-    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
-    <meta content="#D8334A" name="theme-color">
+    <meta name="description" content="Personal portfolio site">
+    <meta name="author" content="Nissan Ahmed">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="#BBAA77">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68028863-3"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-      ga('create', 'UA-68028863-3', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+      gtag('config', 'UA-68028863-3');
+  </script>
 </head>
 
 <body>
-    <div id="banner"></div>
-
     <header>
         <div class="card" id="quick_card">
             <div><!-- replace photo in /img/ 705x705 -->
-            <img id="photo" src="img/photo.png" title="Icon made by Freepik from www.flaticon.com"></div>
-            <h1 id="name">NISSAN AHMED</h1>
-            <h2 id="description">Geek | Software Engineer | Student</h2>
-        </div>
-    </header>
+                <img id="photo" src="img/photo.png" title="Logo"></div>
+                <h1 id="name">Nissan Ahmed</h1>
+                <h2 id="description">Software Engineer</h2>
+            </div>
+        </header>
 
-    <main>
-        <div class="card" id="about_card">
+        <main>
+            <div class="card" id="about_card">
 
-            <!-- Education Tab -->
-            <section class="tab">
-                <div class="title">
-                    <i class="fa fa-graduation-cap"></i>Education
-                </div>
-                <div class="content">
-                    <section class="element">
-                        <div class="name">
-                            B.Sc. in Computer Science &amp; Engineering<br>
-                            North Western University<br>
-                            Khulna, Bangladesh
-                        </div>
-                        <div class="info">
-                            2013 - Present
-                        </div>
-                    </section>
-                </div>
-            </section>
-
-            <!-- Projects Tab -->
-            <section class="tab">
-                <div class="title">
-                    <i class="fa fa-cogs"></i>Projects
-                </div>
-                <div class="content">
-                    <section class="element">
-                        <div class="name">
-                            <a href="https://github.com/ni554n" target="_blank">Github Profile</a>
-                        </div>
-                        <div class="info">
-                            Open Source Projects
-                        </div>
-                    </section>
-                </div>
-            </section>
-
-            <!-- Skills Tab -->
-            <section class="tab">
-                <div class="title">
-                    <i class="fa fa-file-code-o"></i>Skills
-                </div>
-                <div class="content">
-                    <section class="element">
-                        <div class="name">
-                            Android &amp; Java
-                        </div>
-                        <div class="info">
-                            Experince in Software Development, Design, Architecture, Build, Testing
-                        </div>
-                    </section>
-
-                    <hr align="left">
-
-                    <section class="element">
-                        <div class="name">
-                            UI &amp; UX Engineering
-                        </div>
-                        <div class="info">
-                            Experience in pixel-perfect design &amp; meaningful UX designing
-                        </div>
-                    </section>
-
-                    <hr align="left">
-
-                    <section class="element">
-                        <div class="name">
-                            Version Control (Git)
-                        </div>
-                        <div class="info">
-                            Experience in CLI, GUI &amp; Github / Bitbucket
-                        </div>
-                    </section>
-
-                    <hr align="left">
-
-                    <section class="element">
-                        <div class="name">
-                            Web Development
-                        </div>
-                        <div class="info">
-                            Experince with HTML5, CSS, JS (Node.js), PHP
-                        </div>
-                    </section>
-
-                    <hr align="left">
-
-                    <section class="element">
-                        <div class="name">
-                            C / C++ &amp; Python
-                        </div>
-                        <div class="info">
-                            Educational knowledge
-                        </div>
-                    </section>
-                </div>
-            </section>
-        </div>
-
-        <div class="card" id="contact_card">
-            <section class="tab">
-                <div class="title">
-                    <i class="fa fa-envelope"></i>Contact
-                </div>
-
-                <div class="content">
-                    <!-- <div class="contacts"><a href="mailto:aan007bd@gmail.com"><i class="fa fa-envelope"></i>&nbsp; E-Mail</a></div> -->
-                    <!-- <div class="contacts"><a href="http://yourlinkhere" target="_blank"><i class="fa fa-globe"></i>&nbsp; Website</a></div> -->
-                    <!-- <div class="contacts"><a href="https://github.com/ni554n" target="_blank"><i class="fa fa-github"></i>&nbsp; Github</a></div> -->
-                    <div class="contacts">
-                        <a href="https://plus.google.com/+NissanAhmed" target="_blank"><i class="fa fa-google-plus"></i>&nbsp; Google+</a>
+                <!-- Education Tab -->
+                <section class="tab">
+                    <div class="title">
+                        <i class="fas fa-graduation-cap"></i>Education
                     </div>
-                    <div class="contacts">
-                        <a href="https://facebook.com/ni554n" target="_blank"><i class="fa fa-facebook"></i>&nbsp; Facebook</a>
+                    <div class="content">
+                        <section class="element">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <div class="name">
+                                            B.Sc. in Computer Science &amp; Engineering
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="date">2013 - 2018</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="name">
+                                            North Western University<br>
+                                            Khulna, Bangladesh
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="info">CGPA: 3.64 out of 4.0</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
                     </div>
+                </section>
+
+                <!-- Projects Tab -->
+                <section class="tab">
+                    <div class="title">
+                        <i class="fas fa-cogs"></i>Projects
+                    </div>
+                    <div class="content">
+                        <section class="element">
+                            <div class="name">
+                                <a href="https://github.com/ni554n" target="_blank">Github Profile</a>
+                            </div>
+                            <div class="info">
+                                Open Source Projects
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- Skills Tab -->
+                <section class="tab">
+                    <div class="title">
+                        <i class="fas fa-file-code" style="padding-left: 4px;padding-right: 4px;"></i>Skills
+                    </div>
+                    <div class="content">
+                        <section class="element">
+                            <div class="name">
+                                Android &amp; Java / Kotlin
+                            </div>
+                            <div class="info">
+                                Experince in Software Development, Design, Architecture, Build, Testing
+                            </div>
+                        </section>
+
+                        <hr align="left">
+
+                        <section class="element">
+                            <div class="name">
+                                UI &amp; UX Engineering
+                            </div>
+                            <div class="info">
+                                Experience in pixel-perfect design &amp; meaningful UX designing
+                            </div>
+                        </section>
+
+                        <hr align="left">
+
+                        <section class="element">
+                            <div class="name">
+                                Version Control (Git)
+                            </div>
+                            <div class="info">
+                                Experience in CLI, GUI &amp; Github / Bitbucket
+                            </div>
+                        </section>
+
+                        <hr align="left">
+
+                        <section class="element">
+                            <div class="name">
+                                Web Development
+                            </div>
+                            <div class="info">
+                                Experince with HTML5, CSS, JS (Node.js), PHP
+                            </div>
+                        </section>
+
+                        <hr align="left">
+
+                        <section class="element">
+                            <div class="name">
+                                C / C++ &amp; Python
+                            </div>
+                            <div class="info">
+                                Educational knowledge
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+            <div class="card" id="contact_card">
+                <section class="tab">
+                    <div class="title">
+                        <i class="fas fa-envelope-open"></i>Contact
+                    </div>
+
+                    <div class="content">
+                        <div class="contacts"><a href="mailto:aan007bd@gmail.com"><i class="fas fa-envelope"></i>&nbsp;E-Mail</a></div>
+                        <div class="contacts"><a href="https://github.com/ni554n" target="_blank"><i class="fab fa-github"></i>&nbsp;Github</a></div>
                     <div class="contacts">
-                        <a href="https://twitter.com/ni554n" target="_blank"><i class="fa fa-twitter"></i>&nbsp; Twitter</a>
+                        <a href="https://twitter.com/ni554n" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
                     </div>
                 </div>
             </section>
         </div>
-
-        <a href="mailto:aan007bd@gmail.com">
-        <div id="fab">
-            &nbsp;<i class="fa fa-envelope"></i>&nbsp;
-        </div></a>
     </main>
 
     <footer>
-        <i class="fa fa-heart" title="Personal Cards 1.0 by Luca Cassani"></i>
+        <i class="fas fa-heart" title="Personal Cards 1.0 by Luca Cassani"></i>
     </footer>
 </body>
 </html>
