@@ -1,0 +1,18 @@
+{
+    "short_name":"NI554N",
+    "name":"Nissan Ahmed",
+    "icons":[
+        {
+            "src":"/img/icons-192.png",
+            "type":"image/png",
+            "sizes":"192x192"
+        },
+        {
+            "src":"/img/icons-512.png",
+            "type":"image/png",
+            "sizes":"512x512"
+        }
+    ],
+    "display":"standalone",
+    "theme_color":"#BBAA77"
+}
