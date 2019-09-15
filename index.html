@@ -1,210 +1,192 @@
-<!--
-* Personal Cards 1.0 by Luca Cassani *
-You can copy, modify, publish, use, sell,
-or distribute this template for any purpose,
-commercial or non-commercial, and by any means.
-It requires no special copyright notes nor attribution.
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Nissan Ahmed</title>
+  <title>Nissan Ahmed</title>
 
-    <link rel="manifest" href="/manifest.json">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@1.8.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@1.8.1/css/boxicons.min.css' rel='stylesheet'>
 
-    <meta name="description" content="Personal portfolio site">
-    <meta name="author" content="Nissan Ahmed">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="theme-color" content="#BBAA77">
+  <meta content="Personal portfolio site" name="description">
+  <meta content="Nissan Ahmed" name="author">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+        name="viewport">
+  <meta content="#BBAA77" name="theme-color">
 
-    <!-- Service worker registration -->
-    <script type="text/javascript">
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                // Registration was successful
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function(err) {
-                    // registration failed :(
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68028863-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68028863-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
-      gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-      gtag('config', 'UA-68028863-3');
+    gtag('js', new Date());
+
+    gtag('config', 'UA-68028863-3');
   </script>
 </head>
 
 <body>
-    <header>
-        <div class="card" id="quick_card">
-            <div><!-- replace photo in /img/ 705x705 -->
-                <img id="photo" src="img/photo.png" title="Logo"></div>
-                <h1 id="name">Nissan Ahmed</h1>
-                <h2 id="description">&lt; Software Engineer &gt;</h2>
-            </div>
-        </header>
+<header>
+  <div class="card" id="quick_card">
+    <div><img alt="Nissan's Logo" id="photo" src="assets/ni554n.svg" title="Logo"></div>
+    <h1 id="name">Nissan Ahmed</h1>
+    <h2 id="description">&lt; Software Engineer &gt;</h2>
+  </div>
+</header>
 
-        <main>
-            <div class="card" id="about_card">
+<main>
+  <div class="card" id="about_card">
 
-                <!-- Education Tab -->
-                <section class="tab">
-                    <div class="title">
-                        <i class="bx bx-book-open"></i>Education
-                    </div>
-                    <div class="content">
-                        <section class="element">
-                            <table class="table">
-                                <tr>
-                                    <td>
-                                        <div class="name">
-                                            B.Sc. in Computer Science &amp; Engineering
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="date">2013 - 2018</div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <div class="name">
-                                            North Western University<br>
-                                            Khulna, Bangladesh
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <div class="info">CGPA: 3.64 out of 4.0</div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </section>
-                    </div>
-                </section>
-
-                <!-- Projects Tab -->
-                <section class="tab">
-                    <div class="title">
-                        <i class="bx bx-widget"></i>Projects
-                    </div>
-                    <div class="content">
-                        <section class="element">
-                            <div class="name">
-                                <a href="https://github.com/ni554n" target="_blank">Github Profile</a>
-                            </div>
-                            <div class="info">
-                                Open Source Projects
-                            </div>
-                        </section>
-
-                        <hr align="left">
-
-                        <section class="element">
-                            <div class="name">
-                                <a href="https://bitbucket.com/ni554n" target="_blank">Bitbucket</a>
-                            </div>
-                            <div class="info">
-                                Closed Source Projects
-                            </div>
-                        </section>
-                    </div>
-                </section>
-
-                <!-- Skills Tab -->
-                <section class="tab">
-                    <div class="title">
-                        <i class="bx bx-terminal"></i>Skills
-                    </div>
-                    <div class="content">
-                        <section class="element">
-                            <div class="name">
-                                Android &amp; Java / Kotlin
-                            </div>
-                            <div class="info">
-                                Experince in Software Development, Design, Architecture, Build, Testing
-                            </div>
-                        </section>
-
-                        <hr align="left">
-
-                        <section class="element">
-                            <div class="name">
-                                UI &amp; UX Engineering
-                            </div>
-                            <div class="info">
-                                Experience in pixel-perfect design &amp; meaningful UX designing
-                            </div>
-                        </section>
-
-                        <hr align="left">
-
-                        <section class="element">
-                            <div class="name">
-                                Version Control (Git)
-                            </div>
-                            <div class="info">
-                                Experience in CLI, GUI &amp; Github / Bitbucket
-                            </div>
-                        </section>
-
-                        <hr align="left">
-
-                        <section class="element">
-                            <div class="name">
-                                Web Development
-                            </div>
-                            <div class="info">
-                                Experince with HTML5, CSS, JS (Node.js), PHP
-                            </div>
-                        </section>
-
-                        <hr align="left">
-
-                        <section class="element">
-                            <div class="name">
-                                C / C++ &amp; Python
-                            </div>
-                            <div class="info">
-                                Educational knowledge
-                            </div>
-                        </section>
-                    </div>
-                </section>
-            </div>
-
-            <div class="card" id="contact_card">
-                <section class="tab">
-                    <div class="title">
-                        <i class="bx bx-bullseye"></i>Contact
-                    </div>
-
-                    <div class="content">
-                        <div class="contacts"><a href="mailto:aan007bd@gmail.com"><i class="bx-fw bx bxs-envelope"></i>&nbsp;E-Mail</a></div>
-                        <div class="contacts"><a href="https://github.com/ni554n" target="_blank"><i class="bx-fw bx bxl-github"></i>&nbsp;Github</a></div>
-                    <div class="contacts">
-                        <a href="https://twitter.com/ni554n" target="_blank"><i class="bx-fw bx bxl-twitter"></i>&nbsp;Twitter</a>
-                    </div>
+    <!-- Education Tab -->
+    <section class="tab">
+      <div class="title">
+        <i class="bx bx-book-open"></i>Education
+      </div>
+      <div class="content">
+        <section class="element">
+          <table class="table">
+            <tr>
+              <td>
+                <div class="name">
+                  B.Sc. in Computer Science &amp; Engineering
                 </div>
-            </section>
-        </div>
-    </main>
+              </td>
+              <td>
+                <div class="date">2013 - 2017</div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div class="name">
+                  North Western University<br>
+                  Khulna, Bangladesh
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div class="info">CGPA: 3.64 out of 4.0</div>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </section>
 
-    <footer>
-        <i class="bx bxs-heart" title="Personal Cards 1.0 by Luca Cassani"></i>
-    </footer>
+    <!-- Projects Tab -->
+    <section class="tab">
+      <div class="title">
+        <i class="bx bx-widget"></i>Projects
+      </div>
+      <div class="content">
+        <section class="element">
+          <div class="name">
+            <a href="https://github.com/ni554n" target="_blank">Github Profile</a>
+          </div>
+          <div class="info">
+            Open Source Projects
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="element">
+          <div class="name">
+            <a href="https://bitbucket.com/ni554n" target="_blank">Bitbucket</a>
+          </div>
+          <div class="info">
+            Closed Source Projects
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Skills Tab -->
+    <section class="tab">
+      <div class="title">
+        <i class="bx bx-terminal"></i>Skills
+      </div>
+      <div class="content">
+        <section class="element">
+          <div class="name">
+            Android &amp; Java / Kotlin
+          </div>
+          <div class="info">
+            Experience in Software Development, Design, Architecture, Build, Testing
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="element">
+          <div class="name">
+            UI &amp; UX Engineering
+          </div>
+          <div class="info">
+            Experience in pixel-perfect design &amp; meaningful UX designing
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="element">
+          <div class="name">
+            Version Control (Git)
+          </div>
+          <div class="info">
+            Experience in CLI, GUI &amp; Github / Bitbucket
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="element">
+          <div class="name">
+            Web Development
+          </div>
+          <div class="info">
+            Experience with HTML5, CSS, JS (Node.js), PHP
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="element">
+          <div class="name">
+            C / C++ &amp; Python
+          </div>
+          <div class="info">
+            Educational knowledge
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+
+  <div class="card" id="contact_card">
+    <section class="tab">
+      <div class="title">
+        <i class="bx bx-bullseye"></i>Contact
+      </div>
+
+      <div class="content">
+        <div class="contacts"><a href="mailto:aan007bd@gmail.com"><i class="bx-fw bx bxs-envelope"></i>&nbsp;E-Mail</a>
+        </div>
+        <div class="contacts"><a href="https://github.com/ni554n" target="_blank"><i class="bx-fw bx bxl-github"></i>&nbsp;Github</a>
+        </div>
+        <div class="contacts">
+          <a href="https://twitter.com/ni554n" target="_blank"><i class="bx-fw bx bxl-twitter"></i>&nbsp;Twitter</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <i class="bx bxs-heart" title="Based on Personal Cards 1.0 by Luca Cassani"></i>
+</footer>
 </body>
 </html>
