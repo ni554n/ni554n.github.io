@@ -1,15 +1,189 @@
 ---
+import "./index.css";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+    <meta name="theme-color" content="#BBAA77" />
+
+    <meta content="Personal portfolio site" name="description" />
+    <meta content="Nissan Ahmed" name="author" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@1.8.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Nissan Ahmed</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+	
+  <body>
+    <header class="card" id="author">
+      <div>
+        <img alt="Nissan's Logo" id="logo" src="assets/ni554n.svg" />
+      </div>
+      <h1 id="name">Nissan Ahmed</h1>
+      <h2 id="description">&lt; Developer | Designer &gt;</h2>
+    </header>
+
+    <main class="card" id="info">
+      <!-- Projects -->
+      <section>
+        <div class="title"><i class="bx bx-widget"></i>Projects</div>
+        <div class="content">
+          <section class="element">
+            <div class="name">
+              <a
+                href="https://github.com/ni554n"
+                target="_blank"
+                data-umami-event="github-link"
+                >Github Profile <i class="bx-fw bx bxl-github"></i
+              ></a>
+            </div>
+            <div class="info">Open-source projects I maintain</div>
+          </section>
+
+          <hr />
+
+          <section class="element">
+            <div class="name">
+              <a
+                href="https://www.linkedin.com/in/ni554n/details/projects/"
+                target="_blank"
+                >LinkedIn Profile <i class="bx-fw bx bxl-linkedin-square"></i
+              ></a>
+            </div>
+            <div class="info">Timeline of my completed apps</div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Skills Tab -->
+      <section class="tab">
+        <div class="title"><i class="bx bx-terminal"></i>Skills</div>
+        <div class="content">
+          <section class="element">
+            <div class="name">Full Stack Web Development</div>
+            <div class="info">
+              I'm deep into making bleeding "Edge" serverless stuff. My weapons
+              of choice for frontend are Astro + SolidJS / Next.js + React with
+              Tailwind CSS.
+            </div>
+          </section>
+
+          <hr />
+
+          <section class="element">
+            <div class="name">Android Development</div>
+            <div class="info">
+              I've been making Android apps for a long time. So
+              <br />
+              I know ins-n-outs of the Material Design system.
+            </div>
+          </section>
+
+          <hr />
+
+          <section class="element">
+            <div class="name">UI &amp; UX Design</div>
+            <div class="info">
+              I've a<span style="opacity: 0.5">n un</span>healthy obsession with
+              making design intuitive and visually perfect.
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Education Tab -->
+      <section class="tab">
+        <div class="title"><i class="bx bx-book-open"></i>Education</div>
+        <div class="content">
+          <section class="element">
+            <div class="table">
+              <div class="name">
+                B.Sc. in Computer Science &amp; Engineering
+              </div>
+              <span class="date">2013 - 2017</span>
+            </div>
+
+            <div class="name">
+              North Western University<br />
+              Khulna, Bangladesh
+            </div>
+
+            <div class="info">CGPA: 3.64 out of 4.0</div>
+
+            <div class="table">
+              <a
+                href="https://docs.google.com/document/d/e/2PACX-1vT7CVkDahwiR00jYvD5jbjW77lg9Cja7zUawmv3bTk5hIK2WqKve5eNLMCJlqC5BvYTv9IaFFkvEbLP/pub"
+                target="_blank"
+                class="name"
+                style="margin-top: 0.5rem"
+                >Solving Asynchronous Problems Effectively with Reactive
+                Programming</a
+              >
+
+              <span class="date">Thesis</span>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="card" id="contact_card">
+        <section class="tab">
+          <div class="title"><i class="bx bx-bullseye"></i>Contact</div>
+
+          <div class="content">
+            <div class="contacts">
+              <a
+                href="mailto:hello@anissan.com"
+                data-umami-event="email-id-link"
+                ><i class="bx-fw bx bxs-envelope"></i>&nbsp;E-Mail</a
+              >
+            </div>
+
+            <div class="contacts">
+              <a href="https://twitter.com/ni554n" target="_blank"
+                ><i
+                  class="bx-fw bx bxl-twitter"
+                  data-umami-event="twitter-link"
+                ></i
+                >&nbsp;Twitter</a
+              >
+            </div>
+
+            <div class="contacts">
+              <a
+                href="https://www.linkedin.com/in/ni554n/"
+                target="_blank"
+                data-umami-event="linkedin-link"
+                ><i class="bx-fw bx bxl-linkedin-square"></i>&nbsp;LinkedIn</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <a
+        href="https://github.com/ni554n/ni554n.github.io"
+        target="_blank"
+        data-umami-event="source-code-link"
+        id="heart"
+        ><i class="bx bxs-heart" title="Designed & Developed by yours truly"></i
+      ></a>
+    </footer>
+  </body>
 </html>
+
+<script
+async
+src="https://usage.anissan.com/sender.js"
+data-website-id="8967715a-cd7e-4563-a129-af2a452c376c"
+></script>
