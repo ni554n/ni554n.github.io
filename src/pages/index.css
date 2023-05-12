@@ -1,9 +1,16 @@
-@font-face {
-  font-family: "MonoLisa";
-  font-style: normal;
-  font-weight: 400;
-  font-display: fallback;
-  src: url("assets/fonts/MonoLisa-Regular.woff2") format("woff2");
+/* https://tailwindcss.com/docs/functions-and-directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "MonoLisa";
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+    src: url("assets/fonts/MonoLisa-Regular.woff2") format("woff2");
+  }
 }
 
 *,
@@ -30,7 +37,7 @@ body {
 }
 
 a {
-  color: #B78;
+  color: #b78;
   text-decoration: none;
 }
 
