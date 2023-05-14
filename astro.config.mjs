@@ -3,10 +3,12 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://ni554n.github.io",
-  integrations: [tailwind({
-    config: {
-      applyBaseStyles: false,
-    },
-  })],
+  site: "https://v1.anissan.com",
+  integrations: [
+    tailwind({
+      config: {
+        applyBaseStyles: false,
+      },
+    }),
+  ],
 });
