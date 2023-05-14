@@ -5,11 +5,11 @@
 
 @layer base {
   @font-face {
-    font-family: "MonoLisa";
+    font-family: "Fira Code";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-display: fallback;
-    src: url("assets/fonts/MonoLisa-Regular.woff2") format("woff2");
+    src: url("/assets/fonts/fira-code-500-latin.woff2") format("woff2");
   }
 }
 
