@@ -22,9 +22,3 @@
     @apply text-rose no-underline underline-offset-2 hover:underline;
   }
 }
-
-i {
-  font-size: 1.25rem;
-  display: inline-block;
-  vertical-align: -16%;
-}

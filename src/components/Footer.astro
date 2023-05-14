@@ -1,7 +1,16 @@
+---
+import ContactIcon from "./assets/ContactIcon.astro";
+import FacebookLogo from "./assets/FacebookLogo.astro";
+import MailIcon from "./assets/MailIcon.astro";
+import TwitterLogo from "./assets/TwitterLogo.astro";
+---
+
 <footer>
   <article class="card bg-[url('/assets/patterns/hideout.svg')] px-8 py-5">
     <h1 class="text-gold">
-      <i class="bx bx-bullseye relative -left-2.5"></i>Contact
+      <ContactIcon
+        class="relative -left-2.5 inline-block h-5 w-5 align-text-top"
+      />Contact
     </h1>
 
     <div class="my-4 flex flex-wrap justify-center gap-5 text-center">
@@ -9,7 +18,7 @@
         class="link"
         href="mailto:hello@anissan.com"
         data-umami-event="email-id-link"
-        ><i class="bx-fw bx bxs-envelope mr-2"></i>Email</a
+        ><MailIcon class="mr-2 inline-block h-5 w-5 align-text-top" />Email</a
       >
 
       <a
@@ -17,7 +26,9 @@
         href="https://twitter.com/ni554n"
         target="_blank"
         data-umami-event="twitter-link"
-        ><i class="bx-fw bx bxl-twitter mr-2"></i>Twitter</a
+        ><TwitterLogo
+          class="mr-2 inline-block h-5 w-5 align-text-top"
+        />Twitter</a
       >
 
       <a
@@ -25,7 +36,9 @@
         href="https://www.facebook.com/ni554n/"
         target="_blank"
         data-umami-event="facebook-link"
-        ><i class="bx-fw bx bxl-facebook-square mr-2"></i>Facebook</a
+        ><FacebookLogo
+          class="mr-2 inline-block h-5 w-5 align-text-top"
+        />Facebook</a
       >
     </div>
   </article>

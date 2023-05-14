@@ -1,6 +1,14 @@
+---
+import GitHubLogo from "./assets/GitHubLogo.astro";
+import LinkedInLogo from "./assets/LinkedInLogo.astro";
+import ProjectIcon from "./assets/ProjectIcon.astro";
+---
+
 <section>
   <h1 class="text-gold">
-    <i class="bx bx-widget relative -left-2.5"></i>Projects
+    <ProjectIcon
+      class="relative -left-2.5 inline-block h-5 w-5 align-text-top"
+    />Projects
   </h1>
 
   <div class="divide-y divide-gold/25 [&_article]:ml-5 [&_article]:py-3">
@@ -20,7 +28,7 @@
         </p>
       </div>
 
-      <i class="bx-fw bx bxl-github relative left-2 text-2xl text-gray-700"></i>
+      <GitHubLogo class="w-6 h-6 text-gray-700" />
     </article>
 
     <article class="flex items-center justify-between">
@@ -33,20 +41,16 @@
             class="ml-2 inline-block transition-transform group-hover:translate-x-1"
             >-&gt;</span
           ></a
-        ><p class="mt-2 text-sm text-gray-700">
-          Timeline of my completed apps
-        </p>
+        ><p class="mt-2 text-sm text-gray-700">Timeline of my completed apps</p>
       </div>
 
-      <i
-        class="bx-fw bx bxl-linkedin-square relative left-2 text-2xl text-gray-700"
-      ></i>
+      <LinkedInLogo class="w-6 h-6 text-gray-700" />
     </article>
   </div>
 </section>
 
 <style>
-  article:has(a:hover) i {
+  article:has(a:hover) svg {
     color: theme(colors.rose);
   }
 </style>
