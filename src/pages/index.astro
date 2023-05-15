@@ -42,6 +42,6 @@ import Skills from "../components/Skills.astro";
 
 <script
   async
-  src="https://usage.anissan.com/sender.js"
-  data-website-id="8967715a-cd7e-4563-a129-af2a452c376c"
+  src={import.meta.env.PUBLIC_UMAMI_SCRIPT_URL}
+  data-website-id={import.meta.env.PUBLIC_UMAMI_WEBSITE_ID}
 ></script>
