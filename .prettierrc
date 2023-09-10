@@ -1,7 +1,5 @@
 {
-  "//": "https://github.com/tailwindlabs/prettier-plugin-tailwindcss#compatibility-with-other-prettier-plugins",
-  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
-  "pluginSearchDirs": false,
+  "//": "Must be last: https://github.com/tailwindlabs/prettier-plugin-tailwindcss#compatibility-with-other-prettier-plugins",
   "overrides": [
     {
       "files": "*.astro",
@@ -10,6 +8,11 @@
       }
     }
   ],
-  "trailingComma": "all",
-  "singleQuote": false
+  "plugins": [
+    "prettier-plugin-astro",
+    "prettier-plugin-tailwindcss"
+  ],
+  "pluginSearchDirs": false,
+  "singleQuote": false,
+  "trailingComma": "all"
 }
