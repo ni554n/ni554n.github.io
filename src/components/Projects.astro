@@ -1,4 +1,6 @@
 ---
+import AndroidIcon from "./assets/AndroidIcon.astro";
+import ChromeIcon from "./assets/ChromeIcon.astro";
 import GitHubLogo from "./assets/GitHubLogo.astro";
 import LinkedInLogo from "./assets/LinkedInLogo.astro";
 import ProjectIcon from "./assets/ProjectIcon.astro";
@@ -12,11 +14,12 @@ import ProjectIcon from "./assets/ProjectIcon.astro";
   </h1>
 
   <div class="divide-y divide-gold/25 [&_article]:ml-5 [&_article]:py-3">
+    {/* Fontmark */}
     <article class="flex items-center justify-between gap-3">
       <div class="flex-1">
         <a
           class="link group"
-          href="https://github.com/ni554n/fontmark"
+          href="https://chrome.google.com/webstore/detail/fontmark/hagjnfpnbaddimijdfbhhjhfiaenklfc"
           target="_blank"
           data-umami-event="fontmark-link"
         >
@@ -31,29 +34,30 @@ import ProjectIcon from "./assets/ProjectIcon.astro";
         </p>
       </div>
 
-      <GitHubLogo class="h-6 w-6 text-gray-700" />
+      <ChromeIcon class="h-6 w-6 text-gray-700" />
     </article>
 
+    {/* Redium */}
     <article class="flex items-center justify-between gap-3">
       <div class="flex-1">
         <a
           class="link group"
-          href="https://github.com/ni554n/battarang-notifier-android"
+          href="https://chrome.google.com/webstore/detail/aapiedkipcbeplicbbicchmdmpinhjdl"
           target="_blank"
-          data-umami-event="battarang-link"
-          >Battarang
+          data-umami-event="redium-link"
+        >
           <span class="whitespace-nowrap"
-            ><span>Notifier</span><span
+            ><span>Redium</span><span
               class="ml-2 inline-block transition-transform group-hover:translate-x-1"
               >-&gt;</span
             ></span
           ></a
         ><p class="mt-2 text-sm text-gray-700">
-          Get notified when your android's battery is low or full
+          Automatically unblock medium articles through proxies
         </p>
       </div>
 
-      <GitHubLogo class="h-6 w-6 text-gray-700" />
+      <ChromeIcon class="h-6 w-6 text-gray-700" />
     </article>
 
     <article class="flex items-center justify-between gap-3">
@@ -78,6 +82,30 @@ import ProjectIcon from "./assets/ProjectIcon.astro";
       <GitHubLogo class="h-6 w-6 text-gray-700" />
     </article>
 
+    {/* Battarang */}
+    <article class="flex items-center justify-between gap-3">
+      <div class="flex-1">
+        <a
+          class="link group"
+          href="https://battarang.anissan.com"
+          target="_blank"
+          data-umami-event="battarang-link"
+          >Battarang
+          <span class="whitespace-nowrap"
+            ><span>Notifier</span><span
+              class="ml-2 inline-block transition-transform group-hover:translate-x-1"
+              >-&gt;</span
+            ></span
+          ></a
+        ><p class="mt-2 text-sm text-gray-700">
+          Get notified when your android's battery is low or full
+        </p>
+      </div>
+
+      <AndroidIcon class="h-7 w-7 translate-x-0.5 text-gray-700" />
+    </article>
+
+    {/* GitHub Profile */}
     <article class="flex items-center justify-between gap-3">
       <div class="flex-1">
         <a
@@ -100,6 +128,7 @@ import ProjectIcon from "./assets/ProjectIcon.astro";
       <GitHubLogo class="h-6 w-6 text-gray-700" />
     </article>
 
+    {/* LinkedIn Profile */}
     <article class="flex items-center justify-between gap-3">
       <div class="flex-1">
         <a
@@ -113,7 +142,9 @@ import ProjectIcon from "./assets/ProjectIcon.astro";
               >-&gt;</span
             ></span
           ></a
-        ><p class="mt-2 text-sm text-gray-700">Timeline of my completed apps for clients</p>
+        ><p class="mt-2 text-sm text-gray-700">
+          Timeline of my completed apps for clients
+        </p>
       </div>
 
       <LinkedInLogo class="h-6 w-6 text-gray-700" />
