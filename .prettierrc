@@ -12,7 +12,5 @@
     "prettier-plugin-astro",
     "prettier-plugin-tailwindcss"
   ],
-  "pluginSearchDirs": false,
-  "singleQuote": false,
-  "trailingComma": "all"
+  "pluginSearchDirs": false
 }
